@@ -1,6 +1,15 @@
 #Core Pkgs
 import streamlit as st 
 
+hide_st_style = """
+			<style>
+			#MainMenu {Visibility : hidden;}
+			footer {Visibility: hidden;}
+			header {Visibility: hidden;}
+			</style>
+			"""
+st.markdown(hide_st_style, unsafe_allow_html = True)
+
 #EDA PKGS
 import pandas as pd
 import plotly.express as px
